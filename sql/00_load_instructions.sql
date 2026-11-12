@@ -1,0 +1,5 @@
+-- SQLite example: import CSV then run analysis scripts.
+-- sqlite3 data/warehouse.db
+-- .mode csv
+-- .import data/sales_transactions.csv sales_transactions
+-- .read sql/top_segments_analysis.sql
