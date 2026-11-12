@@ -1,8 +1,3 @@
-# Project overview — Executive Sales Insights
+# Overview
 
-| Skill / deliverable | Location |
-|---------------------|----------|
-| 5,000+ row transactional dataset | `data/sales_transactions.csv` (5,200 rows) |
-| SQL joins, CTEs, window functions | `sql/` |
-| Star schema + Time Intelligence DAX | `powerbi/` |
-| Dashboard visuals | `powerbi/screenshots/` |
+Read **`README.md`** — start with the data in `data/`, then Power BI steps in `powerbi/BUILD_POWERBI_FROM_THIS_DATA.md`.
