@@ -1,20 +1,23 @@
 # Executive Sales Insights Dashboard
 
-Résumé project **#2** — Power BI & SQL.
+**Author:** Salimeda Deekshith  
+**Stack:** SQL, Power BI (star schema, DAX Time Intelligence)
 
-## Résumé claims → this repo
+End-to-end sales analytics on **5,000+** transactional rows: SQL segmentation, dimensional model, and executive KPI reporting.
 
-- Queried **5,000+** row transactional sales data using **SQL joins, CTEs, window functions** for top segments  
-- **Star-schema** model; **DAX Time Intelligence**; slicers; drill-down executive visuals  
+## What this project covers
 
-**Proof:**
+- SQL **joins**, **CTEs**, and **window functions** for top-performing segments
+- Star-schema design, DAX measures (YTD / YoY), slicers, and drill-down layouts
 
-| Item | Path |
-|------|------|
-| 5,200-row fact | `data/sales_transactions.csv` |
-| Dimension tables | `data/dim_*.csv` |
-| Joins + ranking SQL | `sql/star_schema_joins.sql`, `sql/top_segments_analysis.sql` |
-| DAX (YTD, YoY) | `powerbi/dax_measures.dax` |
-| Model & report layout | `powerbi/star_schema_model.md`, `docs/power_bi_pages.md` |
+## Repository contents
 
-Full bullet ↔ file map: `RESUME_ALIGNMENT.md`
+| Path | Description |
+|------|-------------|
+| `data/sales_transactions.csv` | Fact data (5,200 rows) |
+| `data/dim_*.csv` | Dimension tables |
+| `sql/` | Join and ranking queries |
+| `powerbi/dax_measures.dax` | DAX Time Intelligence measures |
+| `powerbi/screenshots/` | Dashboard preview images |
+| `output/top_segments_report.txt` | Sample SQL/analytics output |
+| `RUN_LOCALLY.md` | Setup and Power BI build steps |
