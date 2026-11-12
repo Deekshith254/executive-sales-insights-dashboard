@@ -18,6 +18,8 @@ End-to-end sales analytics on **5,000+** transactional rows: SQL segmentation, d
 | `data/dim_*.csv` | Dimension tables |
 | `sql/` | Join and ranking queries |
 | `powerbi/dax_measures.dax` | DAX Time Intelligence measures |
-| `powerbi/screenshots/` | Dashboard preview images |
+| `powerbi/BUILD_POWERBI_FROM_THIS_DATA.md` | **Build real `.pbix` from this repo’s CSV** |
+| `powerbi/reports/` | Save `Executive_Sales_Insights.pbix` here |
+| `powerbi/screenshots/` | **Only** PNG exports from Power BI (not Python charts) |
 | `output/top_segments_report.txt` | Sample SQL/analytics output |
 | `RUN_LOCALLY.md` | Setup and Power BI build steps |
