@@ -1,0 +1,14 @@
+Executive Sales Insights — top 10 region×category segments (revenue)
+Total fact rows: 5200
+
+rank | region | category | revenue
+ 1 | Central | Office Supplies | 346,209.01
+ 2 | North | Office Supplies | 343,069.99
+ 3 | East | Office Supplies | 324,018.44
+ 4 | South | Electronics | 320,790.95
+ 5 | West | Office Supplies | 315,342.78
+ 6 | North | Technology | 310,079.18
+ 7 | Central | Furniture | 309,543.78
+ 8 | East | Electronics | 308,139.07
+ 9 | South | Office Supplies | 305,473.42
+10 | East | Furniture | 305,185.45
