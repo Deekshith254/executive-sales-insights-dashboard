@@ -1,25 +1,30 @@
-# Executive Sales Insights Dashboard
+# Executive Sales Insights
 
 **Author:** Salimeda Deekshith  
-**Stack:** SQL, Power BI (star schema, DAX Time Intelligence)
 
-End-to-end sales analytics on **5,000+** transactional rows: SQL segmentation, dimensional model, and executive KPI reporting.
+Sales analytics project: **SQL** for segment analysis and a **Power BI** executive dashboard (star schema, DAX, slicers).
 
-## What this project covers
+## Getting started
 
-- SQL **joins**, **CTEs**, and **window functions** for top-performing segments
-- Star-schema design, DAX measures (YTD / YoY), slicers, and drill-down layouts
+1. Explore **`data/sales_transactions.csv`** and dimension files in **`data/`**.
+2. Review SQL examples in **`sql/`**.
+3. To build the dashboard: install [Power BI Desktop](https://powerbi.microsoft.com/desktop/) and follow **`powerbi/BUILD_POWERBI_FROM_THIS_DATA.md`**.
+4. Save the report under **`powerbi/reports/`** and export screenshots to **`powerbi/screenshots/`**.
 
-## Repository contents
+## Outputs
 
-| Path | Description |
-|------|-------------|
-| `data/sales_transactions.csv` | Fact data (5,200 rows) |
-| `data/dim_*.csv` | Dimension tables |
+| Output | How it is produced |
+|--------|---------------------|
+| SQL analysis results | Run queries in **`sql/`** in your SQL tool (SSMS, DBeaver, etc.) on the CSV data |
+| Segment summary | **`output/top_segments_report.txt`** (derived from `data/sales_transactions.csv`) |
+| Dashboard | **`powerbi/reports/*.pbix`** — built in Power BI per **`powerbi/BUILD_POWERBI_FROM_THIS_DATA.md`** |
+| Screenshots | **File → Export → PNG** from Power BI into **`powerbi/screenshots/`** |
+
+## Key files
+
+| Path | Purpose |
+|------|---------|
 | `sql/` | Join and ranking queries |
-| `powerbi/dax_measures.dax` | DAX Time Intelligence measures |
-| `powerbi/BUILD_POWERBI_FROM_THIS_DATA.md` | **Build real `.pbix` from this repo’s CSV** |
-| `powerbi/reports/` | Save `Executive_Sales_Insights.pbix` here |
-| `powerbi/screenshots/` | **Only** PNG exports from Power BI (not Python charts) |
-| `output/top_segments_report.txt` | Sample SQL/analytics output |
-| `RUN_LOCALLY.md` | Setup and Power BI build steps |
+| `powerbi/dax_measures.dax` | DAX measures |
+| `powerbi/BUILD_POWERBI_FROM_THIS_DATA.md` | Dashboard build steps |
+| `docs/power_bi_pages.md` | Report layout notes |

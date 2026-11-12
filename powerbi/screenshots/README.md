@@ -1,10 +1,5 @@
-# Power BI exports only
+# Screenshots
 
-Put **PNG/PDF exported from Power BI Desktop** here after following `../BUILD_POWERBI_FROM_THIS_DATA.md`.
+Put **PNG files exported from Power BI Desktop** here after you build the report.
 
-Do **not** use Python/Matplotlib images as the official dashboard — those are not Power BI reports.
-
-After export, typical files:
-
-- `executive_summary.png`
-- `regional_trend.png`
+Step-by-step: `../BUILD_POWERBI_FROM_THIS_DATA.md`
