@@ -1,0 +1,26 @@
+// Paste into Power BI as new measures on the Sales table.
+
+Total Revenue =
+SUMX (
+    Sales,
+    Sales[quantity] * Sales[unit_price] * ( 1 - Sales[discount_pct] / 100 )
+)
+
+Total Profit =
+SUMX (
+    Sales,
+    Sales[quantity] * Sales[unit_price] * ( 1 - Sales[discount_pct] / 100 )
+        - Sales[quantity] * Sales[unit_cost]
+)
+
+Profit Margin % =
+DIVIDE ( [Total Profit], [Total Revenue] )
+
+Revenue YTD =
+TOTALYTD ( [Total Revenue], 'Date'[Date] )
+
+Revenue PY =
+CALCULATE ( [Total Revenue], SAMEPERIODLASTYEAR ( 'Date'[Date] ) )
+
+Revenue YoY % =
+DIVIDE ( [Total Revenue] - [Revenue PY], [Revenue PY] )
